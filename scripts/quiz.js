@@ -24,8 +24,12 @@ answers.addEventListener("click", function (evt) {
    }
 }, false);
 
-continueButton.getElementsByClassName("arrow")[0].addEventListener("click", function() {
+document.getElementById("continueArrow").addEventListener("click", toggleQuiz);
+
+var quizMode = true;
+function toggleQuiz() {
    continueButton.classList.toggle("slide-down");
+
    for (i = 0; i < answers.children.length; i++) {
       var answer = answers.children[i];
       answer.classList.toggle("expand");
@@ -37,12 +41,34 @@ continueButton.getElementsByClassName("arrow")[0].addEventListener("click", func
    answers.children[2].classList.toggle("bottom-left-radius");
    answers.children[3].classList.toggle("bottom-right-radius");
 
+   if (answers.style.marginBottom != "10px")
+        answers.style.marginBottom = "10px";
+   else answers.style.marginBottom = "0";
+
    document.getElementById("question").classList.toggle("expand-question");
 
-   var text = document.getElementById("text");
-   text.style.zIndex = "10";
-   text.classList.toggle("show-text");
-});
+   if (quizMode) {
+      setTimeout(function() {
+         document.getElementById("text").classList.toggle("show-text");
+      }, 200);
+
+      setTimeout(function() {
+         continueButton.classList.toggle("slide-down");
+         quizMode = false;
+      }, 800);
+   } else {
+      for (i = 0; i < answers.children.length; i++) {
+         if (answers.children[i].classList.contains("inactive"))
+            answers.children[i].classList.toggle("inactive");
+      }
+
+      document.getElementById("text").classList.toggle("show-text");
+      quizMode = true;
+      if (currentQuestion < questions.length -  1)
+           loadQuestion(currentQuestion + 1);
+      else loadQuestion(0);
+   }
+}
 
 function loadQuestion(id) {
    var question = document.getElementById("question");

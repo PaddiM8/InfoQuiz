@@ -1,4 +1,15 @@
 $radius: 14px;
+$delay:  .2s;
+
+@font-face {
+   font-family: Roboto;
+   src: url("resources/Roboto-Regular.ttf");
+}
+
+@font-face {
+   font-family: RobotoItalic;
+   src: url("resources/Roboto-Italic.ttf");
+}
 
 body {
    background: #652EAA;
@@ -9,6 +20,10 @@ body {
    height: 100%;
    display: grid;
    font-family: Roboto, sans-serif;
+}
+
+i {
+   font-family: RobotoItalic;
 }
 
 #quizbox {
@@ -27,7 +42,7 @@ body {
    text-align: center;
    line-height: 200px;
    margin: 10px;
-   transition: .3s ease all;
+   transition: $delay ease all;
 }
 
 .expand-question {
@@ -48,8 +63,7 @@ body {
    position: absolute;
    top: 0;
    opacity: 0;
-   transition: .3s ease opacity;
-   transition-delay: .3s;
+   transition: $delay ease opacity;
    z-index: -1;
    font-family: Roboto, sans-serif;
 }
@@ -64,28 +78,36 @@ body {
 
 .show-text {
    opacity: 1;
+   z-index: 10;
 }
 
 #answers {
    width: 100%;
    height: 200px;
    display: grid;
-   grid-template-columns: auto auto;
+   grid-template-columns: 50% 50%;
 }
 
 .answer {
    font-size: 18px;
    text-align: center;
-   line-height: 80px;
    margin: 10px;
    background-color: white;
    border-radius: $radius;
    cursor: pointer;
-   transition: .3s ease all;
+   transition: $delay ease all;
+
+   max-width: 100%;
+   padding-left: 10px;
+   padding-right: 10px;
 
    position: relative;
    z-index: 5;
    font-family: Roboto, sans-serif;
+
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
 }
 
 .answer:hover {
@@ -122,7 +144,7 @@ body {
 
    margin-right: 10px;
    margin-top: -58px;
-   transition: .3s ease transform;
+   transition: $delay ease transform;
 
    .arrow {
       width: calc(100% - 25px);
@@ -130,7 +152,7 @@ body {
       position: absolute;
       top: 0;
       left: 0;
-      padding-top: 18px;
+      padding-top: 15px;
       padding-right: 20px;
       transition: .2s ease all;
       cursor: pointer;
@@ -153,6 +175,7 @@ body {
 
 .slide-down {
    transform: translateY(61px);
+   margin-right: 10px;
 }
 
 .correct {
