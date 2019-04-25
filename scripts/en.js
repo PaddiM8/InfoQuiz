@@ -1,6 +1,6 @@
 var questions = [
    {
-      question: "What country emitted the most carbon dioxide in 2017?",
+      question: "Which country emitted the most carbon dioxide in 2017?",
       answers: [
          "USA",
          "China",
