@@ -9,15 +9,15 @@ answers.addEventListener("click", function (evt) {
    var question = questions[currentQuestion];
    var correctAnswerId = question.correctAnswer;
 
-   if (evt.target.className == "answer") {
+   if (evt.target.className == "answer tile") {
       for (i = 0; i < answers.children.length; i++)
          answers.children[i].classList.add("inactive");
 
       if (question.answers[correctAnswerId] == evt.target.innerHTML) {
-         evt.target.className = "answer correct";
+         evt.target.className = "answer tile correct";
       } else {
-         evt.target.className = "answer incorrect";
-         answers.children[correctAnswerId].className = "answer correct";
+         evt.target.className = "answer tile incorrect";
+         answers.children[correctAnswerId].className = "answer tile correct";
       }
 
       continueButton.classList.toggle("slide-down");

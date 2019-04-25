@@ -1,43 +1,60 @@
 @font-face {
-  font-family: Roboto;
-  src: url("resources/Roboto-Regular.ttf");
+  font-family: PrimaryFont;
+  src: url(https://fonts.gstatic.com/s/notosans/v8/o-0IIpQlx3QUlC5A4PNr5TRA.woff2) format("woff2");
 }
 @font-face {
-  font-family: RobotoItalic;
-  src: url("resources/Roboto-Italic.ttf");
+  font-family: TitleFont;
+  src: url(https://fonts.gstatic.com/s/cormorantgaramond/v6/co3bmX5slCNuHLi8bLeY9MK7whWMhyjYqXtK.woff2) format("woff2");
 }
 body {
-  background: #652EAA;
-  background: -webkit-linear-gradient(top left, #652EAA, #581C73);
-  background: -moz-linear-gradient(top left, #652EAA, #581C73);
-  background: linear-gradient(top left, #652EAA, #581C73);
+  background: #AED581;
+  background: -webkit-linear-gradient(top left, #AED581, #9CCC65);
+  background: -moz-linear-gradient(top left, #AED581, #9CCC65);
+  background: linear-gradient(top left, #AED581, #9CCC65);
   margin: 0;
   height: 100%;
   display: grid;
-  font-family: Roboto, sans-serif;
-}
-
-i {
-  font-family: RobotoItalic;
+  font-family: PrimaryFont, sans-serif;
 }
 
 #quizbox {
   width: 800px;
   height: 400px;
-  margin: auto;
   position: relative;
+}
+
+#wrapper {
+  margin: auto;
+}
+
+#top {
+  text-align: center;
+  color: white;
+  margin-bottom: 60px;
+  font-family: TitleFont, sans-serif;
+  font-size: 2em;
+}
+
+.tile {
+  background-color: white;
+  border-radius: 9px;
+  -webkit-box-shadow: 1px 1px 2px 0px rgba(50, 50, 50, 0.3);
+  -moz-box-shadow: 1px 1px 2px 0px rgba(50, 50, 50, 0.3);
+  box-shadow: 1px 1px 2px 0px rgba(50, 50, 50, 0.3);
 }
 
 .question {
   width: calc(100% - 20px);
   height: 200px;
-  background-color: white;
-  border-radius: 14px;
   font-size: 30px;
   text-align: center;
-  line-height: 200px;
   margin: 10px;
   transition: 0.2s ease all;
+  color: black;
+  font-family: PrimaryFont, sans-serif;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .expand-question {
@@ -52,15 +69,21 @@ i {
   width: calc(100% - 60px);
   height: calc(100% - 40px);
   padding: 10px 30px 30px 30px;
-  background-color: white;
-  border-radius: 14px;
   z-index: 10;
   position: absolute;
   top: 0;
   opacity: 0;
   transition: 0.2s ease opacity;
   z-index: -1;
-  font-family: Roboto, sans-serif;
+  font-family: PrimaryFont, sans-serif;
+  color: black;
+}
+.text img {
+  width: 220px;
+  height: auto;
+  display: inline-block;
+  margin-right: 20px;
+  margin-bottom: 20px;
 }
 
 .sources {
@@ -87,8 +110,6 @@ i {
   font-size: 18px;
   text-align: center;
   margin: 10px;
-  background-color: white;
-  border-radius: 14px;
   cursor: pointer;
   transition: 0.2s ease all;
   max-width: 100%;
@@ -96,10 +117,11 @@ i {
   padding-right: 10px;
   position: relative;
   z-index: 5;
-  font-family: Roboto, sans-serif;
+  font-family: PrimaryFont, sans-serif;
   display: flex;
   justify-content: center;
   flex-direction: column;
+  color: black;
 }
 
 .answer:hover {
@@ -114,18 +136,18 @@ i {
 }
 
 .bottom-left-radius {
-  border-bottom-left-radius: 14px;
+  border-bottom-left-radius: 9px;
 }
 
 .bottom-right-radius {
-  border-bottom-right-radius: 14px;
+  border-bottom-right-radius: 9px;
 }
 
 .button {
   padding: 12px 55px 12px 30px;
-  background-color: #43A047;
+  background-color: #4b7bec;
   border: 0;
-  border-radius: 14px;
+  border-radius: 10.8px;
   font-size: 18px;
   color: white;
   float: right;
@@ -141,7 +163,7 @@ i {
   position: absolute;
   top: 0;
   left: 0;
-  padding-top: 15px;
+  padding-top: 17px;
   padding-right: 20px;
   transition: 0.2s ease all;
   cursor: pointer;
@@ -160,26 +182,26 @@ i {
 }
 
 .slide-down {
-  transform: translateY(61px);
+  transform: translateY(68px);
   margin-right: 10px;
 }
 
 .correct {
-  background-color: #43A047;
+  background-color: #26de81;
   cursor: default;
 }
 
 .incorrect {
-  background-color: #D32F2F;
+  background-color: #fc5c65;
   cursor: default;
 }
 
 .correct:hover {
-  background-color: #43A047;
+  background-color: #26de81;
 }
 
 .incorrect:hover {
-  background-color: #D32F2F;
+  background-color: #fc5c65;
 }
 
 .inactive:hover {
