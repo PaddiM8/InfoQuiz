@@ -39,11 +39,11 @@ body {
 
 #top {
    text-align: center;
-   color: white;
-   margin-bottom: 60px;
+   color: #F5F5F5;
+   margin-bottom: 80px;
    margin-top: -55px;
    font-family: TitleFont, sans-serif;
-   font-size: 2em;
+   font-size: 2.4em;
    font-family: 100;
 }
 
@@ -70,9 +70,9 @@ body {
 
 .language {
    font-size: 1.4em;
-   
+
    a {
-      color: white;
+      color: #F5F5F5;
       text-decoration: none;
    }
 }
@@ -248,6 +248,7 @@ body {
 
 .correct {
    background-color: #26de81;
+   margin: 5px;
    cursor: default;
 }
 
