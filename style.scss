@@ -41,8 +41,45 @@ body {
    text-align: center;
    color: white;
    margin-bottom: 60px;
+   margin-top: -55px;
    font-family: TitleFont, sans-serif;
    font-size: 2em;
+   font-family: 100;
+}
+
+#language-select {
+   position: absolute;
+   top: 20px;
+   right: 30px;
+}
+
+.flag {
+   width: 1.4em;
+   height: auto;
+   margin-right: 10px;
+   margin-bottom: -2px;
+}
+
+.flag.en {
+   margin-bottom: 0;
+}
+
+#english {
+   display: none;
+}
+
+.language {
+   font-size: 1.4em;
+   
+   a {
+      color: white;
+      text-decoration: none;
+   }
+}
+
+.language:hover {
+   text-decoration: underline;
+   cursor: pointer;
 }
 
 .tile {
@@ -54,7 +91,7 @@ body {
 }
 
 .question {
-   width: calc(100% - 20px);
+   width: calc(100% - 60px);
    height: 200px;
    font-size: 30px;
    text-align: center;
@@ -66,12 +103,13 @@ body {
    display: flex;
    justify-content: center;
    flex-direction: column;
-
+   padding-left: 20px;
+   padding-right: 20px;
 }
 
 .expand-question {
    margin: 0;
-   width: 100%;
+   width: calc(100% - 40px);
    border-bottom-left-radius: 0;
    border-bottom-right-radius: 0;
    color: white;

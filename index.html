@@ -6,18 +6,22 @@
    </head>
    <body>
       <div id="wrapper">
+         <div id="language-select">
+            <div id="swedish" class="language">
+               <img src="resources/se-flag.png" class="flag"></span><a onclick="window.location.search += '&lang=se'">Svenska</a>
+            </div>
+            <div id="english" class="language">
+               <img src="resources/en-flag.png" class="flag en"></span><a onclick="window.location.search = location.host + location.pathname" href="#">English</a>
+            </div>
+         </div>
          <div id="top">
             <h1>Climate Quiz</h1>
          </div>
          <div id="quizbox">
             <div id="question" class="question tile"></div>
             <div id="text" class="text tile">
-               <div id="content">
-
-               </div>
-               <div id="sources" class="sources">
-
-               </div>
+               <div id="content"></div>
+               <div id="sources" class="sources"></div>
             </div>
             <div id="answers">
                <div class="answer tile"></div>
@@ -26,13 +30,26 @@
                <div class="answer tile"></div>
             </div>
             <div class="button" id="continue">
-               Continue
+               <label>Continue</label>
                <span class="arrow" id="continueArrow"><img src="resources/arrow.svg" /></span>
             </div>
          </div>
       </div>
 
-      <script src="scripts/questions.js"></script>
+      <script>
+         var script = document.createElement('script');
+         if (window.location.href.endsWith("&lang=se")) {
+            script.src = "scripts/se.js";
+            document.getElementById("top").innerHTML = "<h1>Klimatquiz</h1>";
+            document.getElementById("continue").children[0].innerHTML = "Fortsätt";
+            document.getElementById("english").style.display = "block";
+            document.getElementById("swedish").style.display = "none";
+         } else {
+            script.src = "scripts/en.js";
+         }
+
+         document.head.appendChild(script);
+      </script>
       <script src="scripts/quiz.js"></script>
    </body>
 </html>
