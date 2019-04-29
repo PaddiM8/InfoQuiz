@@ -1,6 +1,6 @@
-var currentQuestion = 0;
+var currentQuestion = 4;
 
-window.onload = function() { loadQuestion(0); }
+window.onload = function() { loadQuestion(4); }
 
 var answers = document.getElementById("answers");
 var continueButton = document.getElementById("continue");
