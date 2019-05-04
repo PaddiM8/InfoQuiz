@@ -25,17 +25,17 @@ body {
 }
 
 
-#quizbox {
+main {
    width: 800px;
    height: 400px;
    position: relative;
 }
 
-#wrapper {
+wrapper {
    margin: auto;
 }
 
-#top {
+header {
    text-align: center;
    color: #F5F5F5;
    margin-bottom: 80px;
@@ -127,11 +127,12 @@ body {
    color: black;
 
    img {
-      width: 220px;
+      width: 200px;
       height: auto;
       display: inline-block;
       margin-right: 20px;
       margin-bottom: 20px;
+      float: right;
    }
 }
 

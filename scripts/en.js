@@ -56,5 +56,20 @@ var questions = [
       sources: [
          "EPA (2017). <i>Global greenhouse gas emissions</i>. Retrieved 2019-04-24 from <a href='https://www.epa.gov/ghgemissions/global-greenhouse-gas-emissions-data#Sector'>epa.gov</a>"
       ]
+   },
+   {
+      question: "What is the most common cause of or reason for deforestation?",
+      answers: [
+         "Forest fires",
+         "Tree sickness",
+         "Agriculture",
+         "Storms"
+      ],
+      correctAnswer: 2,
+      text: "<h2>The Importance of Forests</h2><img src='resources/q5_img1.jpg' /><img src='resources/q5_img2.jpg' /><br />Forests are extremely important, trees absorb carbon dioxide and return oxygen. This is even more important now, since it can help with absorbing the excess carbon dioxide. However, forests are being cut down in great amounts, and the biggest driver is agriculture (Persson & Henders & Kastner 2014). Another devastating side-effect of deforestation is the loss of animal and plant life’s habitat, causing imbalance in the ecosystem (Pachamama w.d).",
+      sources: [
+         "Persson, M & Henders, S & Kastner, T (2014). <i>Trading Forests: Quantifying the Contribution of Global Commodity Markets to Emissions from Tropical Deforestation.</i> Retrieved 2019-03-29 from <a href='https://www.cgdev.org/sites/default/files/CGD-Climate-Forest-Series-8-persson-et-al-trading-forests_0.pdf'>cgdev.org</a>",
+         "Pachamama (w.d). <i>Effects of Deforestation</i> Retrieved 2019-04-29 from <a href='https://www.pachamama.org/effects-of-deforestation'>pachamama.org</a>"
+      ]
    }
 ];

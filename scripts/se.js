@@ -56,5 +56,20 @@ var questions = [
       sources: [
          "EPA (2017). <i>Global greenhouse gas emissions</i>. Hämtad 2019-04-24 från <a href='https://www.epa.gov/ghgemissions/global-greenhouse-gas-emissions-data#Sector'>epa.gov</a>"
       ]
+   },
+   {
+      question: "Vilken är den största anledningen för avskogning?",
+      answers: [
+         "Skogsbränder",
+         "Sjukdomar bland träd",
+         "Jordbruk",
+         "Stormar"
+      ],
+      correctAnswer: 2,
+      text: "<h2>Skogar</h2><img src='resources/q5_img1.jpg' /><img src='resources/q5_img2.jpg' />Skogar är extremt viktiga, träd absorberar koldioxid och ger tillbaka syre. Det här är även viktigare nu, eftersom de hjälper till med att absorbera koldioxid. Skogar huggs dock ner i stora mängder, och den största anledningen är jordbruk (Persson & Headers & Kastner 2014). Förutom det här förstör det även livsmiljön för djur och växter som lever i skogarna, vilket skapar en obalans i ekosystemet (Pachamama u.å.)",
+      sources: [
+         "Persson, M & Henders, S & Kastner, T (2014). <i>Trading Forests: Quantifying the Contribution of Global Contribution of Global Commodity Markets to Emissiosn from Topical Deforestation. Hämtad 2019-04-29 från <a href='https://www.cgdev.org/sites/default/files/CGD-Climate-Forest-Series-8-persson-et-al-trading-forests_0.pdf'>cgdev.org</a>",
+         "Pachamama (u.å.). <i>Effects of Deforestation</i> Hämtad 2019-04-29 från <a href='https://www.pachamama/effects-of-deforestation'>pachamama.org</a>"
+      ]
    }
 ];

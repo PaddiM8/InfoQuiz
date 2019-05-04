@@ -5,36 +5,36 @@
       <link rel="stylesheet" type="text/css" href="style.css" />
    </head>
    <body>
-      <div id="wrapper">
-         <div id="language-select">
+      <wrapper>
+         <nav id="language-select">
             <div id="swedish" class="language">
                <img src="resources/se-flag.png" class="flag"></span><a onclick="window.location.search += '&lang=se'">Svenska</a>
             </div>
             <div id="english" class="language">
                <img src="resources/en-flag.png" class="flag en"></span><a onclick="window.location.search = location.host + location.pathname" href="#">English</a>
             </div>
-         </div>
-         <div id="top">
+         </nav>
+         <header>
             <h1>Climate Quiz</h1>
-         </div>
-         <div id="quizbox">
-            <div id="question" class="question tile"></div>
-            <div id="text" class="text tile">
+         </header>
+         <main>
+            <section id="question" class="question tile"></section>
+            <article id="text" class="text tile">
                <div id="content"></div>
                <div id="sources" class="sources"></div>
-            </div>
-            <div id="answers">
+            </article>
+            <section id="answers">
                <div class="answer tile"></div>
                <div class="answer tile"></div>
                <div class="answer tile"></div>
                <div class="answer tile"></div>
-            </div>
-            <div class="button" id="continue">
+            </section>
+            <button class="button" id="continue">
                <label>Continue</label>
                <span class="arrow" id="continueArrow"><img src="resources/arrow.svg" /></span>
-            </div>
-         </div>
-      </div>
+            </button>
+         </main>
+      </wrapper>
 
       <script>
          var script = document.createElement('script');
