@@ -40,7 +40,7 @@
          var script = document.createElement('script');
          if (window.location.href.endsWith("&lang=se")) {
             script.src = "scripts/se.js";
-            document.getElementById("top").innerHTML = "<h1>Klimatquiz</h1>";
+            document.getElementsByTagName("header")[0].innerHTML = "<h1>Klimatquiz</h1>";
             document.getElementById("continue").children[0].innerHTML = "Fortsätt";
             document.getElementById("english").style.display = "block";
             document.getElementById("swedish").style.display = "none";

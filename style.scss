@@ -130,8 +130,10 @@ header {
       width: 200px;
       height: auto;
       display: inline-block;
-      margin-right: 20px;
+      margin-right: 0;
+      margin-left: 10px;
       margin-bottom: 20px;
+      padding-top: 20px;
       float: right;
    }
 }
