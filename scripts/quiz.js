@@ -1,4 +1,5 @@
 var currentQuestion = 0;
+var volume = 0.3;
 
 window.onload = function() { loadQuestion(0); }
 
@@ -13,11 +14,18 @@ answers.addEventListener("click", function (evt) {
       for (i = 0; i < answers.children.length; i++)
          answers.children[i].classList.add("inactive");
 
+      console.log(question.answers[correctAnswerId] +", " + evt.target.innerHTML);
       if (question.answers[correctAnswerId] == evt.target.innerHTML) {
          evt.target.className = "answer tile correct";
+         var audio = new Audio("resources/Correct.wav");
+         audio.volume = volume;
+         audio.play();
       } else {
          evt.target.className = "answer tile incorrect";
          answers.children[correctAnswerId].className = "answer tile correct";
+         var audio = new Audio("resources/Buzz.wav");
+         audio.volume = volume;
+         audio.play();
       }
 
       continueButton.classList.toggle("slide-down");
@@ -28,6 +36,10 @@ document.getElementById("continueArrow").addEventListener("click", toggleQuiz);
 
 var quizMode = true;
 function toggleQuiz() {
+   var audio = new Audio("resources/Click2.wav");
+   audio.volume = volume;
+   audio.play();
+
    continueButton.classList.toggle("slide-down");
 
    for (i = 0; i < answers.children.length; i++) {

@@ -12,9 +12,7 @@ $delay:  .2s;
 }
 
 body {
-   //background: url("resources/trianglify.svg") no-repeat;
-   //background-size: 100%;
-   $bg1: #AAE192;
+   $bg1: #95d37a;
    $bg2: #1E7C4F;
    background: $bg1;
    background: -webkit-linear-gradient(top left, $bg1, $bg2);

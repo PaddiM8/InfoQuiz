@@ -48,7 +48,7 @@ var questions = [
       answers: [
          "Transportation",
          "Agriculture",
-         "Electricity & Heat",
+         "Electricity &amp; Heat",
          "Industries"
       ],
       correctAnswer: 2,

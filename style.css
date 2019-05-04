@@ -7,10 +7,10 @@
   src: url(https://fonts.gstatic.com/s/cormorantgaramond/v6/co3bmX5slCNuHLi8bLeY9MK7whWMhyjYqXtK.woff2) format("woff2");
 }
 body {
-  background: #AAE192;
-  background: -webkit-linear-gradient(top left, #AAE192, #1E7C4F);
-  background: -moz-linear-gradient(top left, #AAE192, #1E7C4F);
-  background: linear-gradient(top left, #AAE192, #1E7C4F);
+  background: #95d37a;
+  background: -webkit-linear-gradient(top left, #95d37a, #1E7C4F);
+  background: -moz-linear-gradient(top left, #95d37a, #1E7C4F);
+  background: linear-gradient(top left, #95d37a, #1E7C4F);
   margin: 0;
   height: 100%;
   display: grid;
