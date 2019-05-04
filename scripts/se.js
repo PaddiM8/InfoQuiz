@@ -38,7 +38,7 @@ var questions = [
          "Väder korrelerar inte direkt med klimatet"
       ],
       correctAnswer: 3,
-      text: "<h2>Klimatet</h2><img src='resources/q3_img1.jpg' /><img src='resources/q3_img2.jpg' /><br />Man kan undra varför vädret är ovanligt kallt vissa dagar, även fast planeten blir varmare och varmare. När planetens klimat blir varmare kan vissa dagar fortfarande vara kallare än vanligt, men överlag är det varmare än för några år sedan (NASA 2019).",
+      text: "<h2>Klimatet</h2><img src='resources/q3_img1.jpg' /><img src='resources/q3_img2.jpg' /><br />Även fast planeten blir varmare är vissa dagar kallare än vanligt, det här används ibland som ett argument till varför global uppvärmning är en myt. När planetens klimat blir varmare kan vissa dagar dock fortfarande vara kallare än vanligt, men överlag är det varmare än för några år sedan (NASA 2019).",
       sources: [
          "NASA (2019). <i>What is Climate Change?</i> Hämtad 2019-04-24 från <a href='https://www.nasa.gov/audience/forstudents/k-4/stories/nasa-knows/what-is-climate-change-k4.html'>nasa.gov</a>"
       ]
