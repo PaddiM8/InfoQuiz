@@ -71,5 +71,19 @@ var questions = [
          "Persson, M & Henders, S & Kastner, T (2014). <i>Trading Forests: Quantifying the Contribution of Global Contribution of Global Commodity Markets to Emissiosn from Topical Deforestation. Hämtad 2019-04-29 från <a href='https://www.cgdev.org/sites/default/files/CGD-Climate-Forest-Series-8-persson-et-al-trading-forests_0.pdf'>cgdev.org</a>",
          "Pachamama (u.å.). <i>Effects of Deforestation</i> Hämtad 2019-04-29 från <a href='https://www.pachamama/effects-of-deforestation'>pachamama.org</a>"
       ]
+   },
+   {
+      question: "Amur leoparder är akut hotade, hur många uppskattas vara kvar?",
+      answers: [
+         "Mer än 2500",
+         "Mer än 500",
+         "Mer än 80",
+         "Mer än 7500"
+      ],
+      correctAnswer: 2,
+      text: "<h2>Amur leoparder</h2> Amur leoparder lever i östra rysslands tempererade klimat och kan springa 60 kilometer per timme (WWF u.å.). Enligt WWF finns det bara runt 80 amur leoparder kvar(som man vet om), vilket gör det till en akut hotad art. Deras fina skin gör dem attraktiva för tjuvjägare. Samtidigt som tjuvjägare jagar amur leoparder, jagar de också artens byte, vilket har gjort det svårare för amur leoparderna att hitta mat (WWF).",
+      sources: [
+         "WWF (u.å.) <i>Amur Leopard</i>. Hämtad 2019-05-08 från <a href='https://www.worldwildlife.org/species/amur-leopard'>worldwildlife.org</a>"
+      ]
    }
 ];

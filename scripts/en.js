@@ -71,5 +71,19 @@ var questions = [
          "Persson, M & Henders, S & Kastner, T (2014). <i>Trading Forests: Quantifying the Contribution of Global Commodity Markets to Emissions from Tropical Deforestation.</i> Retrieved 2019-03-29 from <a href='https://www.cgdev.org/sites/default/files/CGD-Climate-Forest-Series-8-persson-et-al-trading-forests_0.pdf'>cgdev.org</a>",
          "Pachamama (w.d). <i>Effects of Deforestation</i> Retrieved 2019-04-29 from <a href='https://www.pachamama.org/effects-of-deforestation'>pachamama.org</a>"
       ]
+   },
+   {
+      question: "Amur leopards are critically endangered, how many are estimated to be left?",
+      answers: [
+         "More than 2500",
+         "More than 500",
+         "More than 80",
+         "More than 7500"
+      ],
+      correctAnswer: 2,
+      text: "<h2>Amur Leopards</h2>Amur leopards live in the temperate climate of east Russia and can run 60 kilometers per hour (WWF w.d.). According to there are only about 80 known individuals left, making it a critically endangered species. Their beautiful skin has made them attractive to poachers. While poachers hunt amur leopards, they also hunt the species preys, which has given them a harder time finding food (WWF).",
+      sources: [
+         "WWF (w.d.) <i>Amur Leopard</i>. Retrieved 2019-05-08 from <a href='https://www.worldwildlife.org/species/amur-leopard'>worldwildlife.org</a>"
+      ]
    }
 ];
