@@ -1,4 +1,4 @@
-var questions = [
+let questions = [
    {
       question: "Which country emitted the most carbon dioxide in 2017?",
       answers: [

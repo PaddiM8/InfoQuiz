@@ -1,14 +1,14 @@
-var currentQuestion = 0;
-var volume = 0.3;
+let currentQuestion = 0;
+let volume = 0.3;
 
 window.onload = function() { loadQuestion(0); }
 
-var answers = document.getElementById("answers");
-var continueButton = document.getElementById("continue");
+let answers = document.getElementById("answers");
+let continueButton = document.getElementById("continue");
 
 answers.addEventListener("click", function (evt) {
-   var question = questions[currentQuestion];
-   var correctAnswerId = question.correctAnswer;
+   let question = questions[currentQuestion];
+   let correctAnswerId = question.correctAnswer;
 
    if (evt.target.className == "answer tile") {
       for (i = 0; i < answers.children.length; i++)
@@ -17,13 +17,13 @@ answers.addEventListener("click", function (evt) {
       console.log(question.answers[correctAnswerId] +", " + evt.target.innerHTML);
       if (question.answers[correctAnswerId] == evt.target.innerHTML) {
          evt.target.className = "answer tile correct";
-         var audio = new Audio("resources/Correct.wav");
+         let audio = new Audio("resources/Correct.wav");
          audio.volume = volume;
          audio.play();
       } else {
          evt.target.className = "answer tile incorrect";
          answers.children[correctAnswerId].className = "answer tile correct";
-         var audio = new Audio("resources/Buzz.wav");
+         let audio = new Audio("resources/Buzz.wav");
          audio.volume = volume;
          audio.play();
       }
@@ -34,16 +34,16 @@ answers.addEventListener("click", function (evt) {
 
 document.getElementById("continueArrow").addEventListener("click", toggleQuiz);
 
-var quizMode = true;
+let quizMode = true;
 function toggleQuiz() {
-   var audio = new Audio("resources/Click2.wav");
+   let audio = new Audio("resources/Click2.wav");
    audio.volume = volume;
    audio.play();
 
    continueButton.classList.toggle("slide-down");
 
    for (i = 0; i < answers.children.length; i++) {
-      var answer = answers.children[i];
+      let answer = answers.children[i];
       answer.classList.toggle("expand");
 
       if (answer.classList.contains("correct")) answer.classList.toggle("correct");
@@ -83,7 +83,7 @@ function toggleQuiz() {
 }
 
 function loadQuestion(id) {
-   var question = document.getElementById("question");
+   let question = document.getElementById("question");
    question.innerHTML = questions[id].question;
    currentQuestion = id;
 

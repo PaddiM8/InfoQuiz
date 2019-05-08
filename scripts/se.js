@@ -1,4 +1,4 @@
-var questions = [
+let questions = [
    {
       question: "Vilket land släppte ut mest koldioxid 2017?",
       answers: [
