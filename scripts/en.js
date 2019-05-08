@@ -66,10 +66,10 @@ let questions = [
          "Storms"
       ],
       correctAnswer: 2,
-      text: "<h2>The Importance of Forests</h2><img src='resources/q5_img1.jpg' /><img src='resources/q5_img2.jpg' /><br />Forests are extremely important, trees absorb carbon dioxide and return oxygen. This is even more important now, since it can help with absorbing the excess carbon dioxide. However, forests are being cut down in great amounts, and the biggest driver is agriculture (Persson & Henders & Kastner 2014). Another devastating side-effect of deforestation is the loss of animal and plant life’s habitat, causing imbalance in the ecosystem (Pachamama w.d).",
+      text: "<h2>The Importance of Forests</h2><img src='resources/q5_img1.jpg' /><img src='resources/q5_img2.jpg' /><br />Forests are extremely important, trees absorb carbon dioxide and return oxygen. This is even more important now, since it can help with absorbing the excess carbon dioxide. However, forests are being cut down in great amounts, and the biggest driver is agriculture (Persson & Henders & Kastner 2014). Another devastating side-effect of deforestation is the loss of animal and plant life’s habitat, causing imbalance in the ecosystem (Pachamama n.d).",
       sources: [
          "Persson, M & Henders, S & Kastner, T (2014). <i>Trading Forests: Quantifying the Contribution of Global Commodity Markets to Emissions from Tropical Deforestation.</i> Retrieved 2019-03-29 from <a href='https://www.cgdev.org/sites/default/files/CGD-Climate-Forest-Series-8-persson-et-al-trading-forests_0.pdf'>cgdev.org</a>",
-         "Pachamama (w.d). <i>Effects of Deforestation</i> Retrieved 2019-04-29 from <a href='https://www.pachamama.org/effects-of-deforestation'>pachamama.org</a>"
+         "Pachamama (n.d). <i>Effects of Deforestation</i> Retrieved 2019-04-29 from <a href='https://www.pachamama.org/effects-of-deforestation'>pachamama.org</a>"
       ]
    },
    {
@@ -81,9 +81,9 @@ let questions = [
          "More than 7500"
       ],
       correctAnswer: 2,
-      text: "<h2>Amur Leopards</h2>Amur leopards live in the temperate climate of east Russia and can run 60 kilometers per hour (WWF w.d.). According to there are only about 80 known individuals left, making it a critically endangered species. Their beautiful skin has made them attractive to poachers. While poachers hunt amur leopards, they also hunt the species preys, which has given them a harder time finding food (WWF).",
+      text: "<h2>Amur Leopards</h2>Amur leopards live in the temperate climate of east Russia and can run 60 kilometers per hour (WWF n.d.). According to there are only about 80 known individuals left, making it a critically endangered species. Their beautiful skin has made them attractive to poachers. While poachers hunt amur leopards, they also hunt the species preys, which has given them a harder time finding food (WWF).",
       sources: [
-         "WWF (w.d.) <i>Amur Leopard</i>. Retrieved 2019-05-08 from <a href='https://www.worldwildlife.org/species/amur-leopard'>worldwildlife.org</a>"
+         "WWF (n.d.) <i>Amur Leopard</i>. Retrieved 2019-05-08 from <a href='https://www.worldwildlife.org/species/amur-leopard'>worldwildlife.org</a>"
       ]
    }
 ];
